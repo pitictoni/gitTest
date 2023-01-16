@@ -20,6 +20,12 @@ namespace gitTest
         private void button1_Click(object sender, EventArgs e)
         {
             this.BackColor = Color.Blue;
+            this.button2.Click += new System.EventHandler(this.f);
+        }
+
+        private void f(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Yellow;
         }
     }
 }
